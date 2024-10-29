@@ -1,0 +1,106 @@
+.icon {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 20px 0;
+  color: var(--primary-color);
+  cursor: pointer;
+  font-size: 24px;
+  transition: transform 0.3s ease-in-out; /* Transition fluide de la transformation */
+  width: 100%;
+}
+
+.icon_notif {
+  margin-right: 0.5rem;
+  font-size: 27px;
+}
+
+.icon-close {
+  transition: all 330ms ease-in-out;
+  cursor: pointer;
+  font-size: 27px;
+  color: var(--five-color);
+}
+
+.notif-open {
+  right: 20px;
+}
+
+.notif-close {
+  right: -1000px;
+}
+
+.icon-close:hover {
+  transform: scale(105%);
+}
+
+.icon_input {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-size: 26px;
+  color: var(--five-color);
+}
+
+.click::before {
+  content: "";
+  position: absolute;
+  top: -70%;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background-color: var(--primary-color);
+  border-radius: 100%;
+  z-index: -1;
+}
+
+.icon.click .fas {
+  color: var(--secondary-color);
+}
+
+.require {
+  position: relative;
+  width: fit-content;
+}
+
+.require::before {
+  content: "*";
+  position: absolute;
+  top: 0;
+  right: -15px;
+}
+
+.search {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.unselect {
+  opacity: 50%;
+}
+
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  transition: transform 0.3s ease-in-out, justify-content 0.3s ease-in-out;
+}
+
+.icon_hours {
+  font-size: 30px;
+}
+
+.two_icon_container {
+  position: relative;
+}
+
+.two_icon_container .icon_add {
+  position: absolute;
+  right: -20px;
+  top: -7px;
+}
+
+.box .fas {
+  color: var(--five-color);
+}

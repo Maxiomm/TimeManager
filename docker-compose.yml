@@ -1,0 +1,70 @@
+services:
+  db:
+    image: postgres:14-alpine
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - app-network
+
+  backend:
+    build:
+      context: ./backend/timemanager/
+      dockerfile: Dockerfile.backend
+    volumes:
+      - ./backend/timemanager:/app
+    env_file:
+      - .env
+    environment:
+      MIX_ENV: dev
+      PGHOST: db
+      PGPORT: 5432
+    command: ["/app/entrypoint.sh"]
+    ports:
+      - "4000:4000"
+    depends_on:
+      - db
+    networks:
+      - app-network
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.frontend
+    ports:
+      - "8080:8080"
+    depends_on:
+      - backend
+    networks:
+      - app-network
+
+  cypress:
+    build:
+      context: ./cypress
+      dockerfile: Dockerfile
+    depends_on:
+      - frontend
+      - backend
+    volumes:
+      - ./cypress:/app
+    networks:
+      - app-network
+    command: ["npx", "cypress", "run"]
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  pg_data:

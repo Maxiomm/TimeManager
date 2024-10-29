@@ -1,0 +1,10 @@
+.team-list {
+    margin-top: 20px;
+}
+
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease; /* Transition pour un effet fluide */
+}

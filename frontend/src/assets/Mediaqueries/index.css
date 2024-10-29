@@ -1,0 +1,301 @@
+@media screen and (max-width: 1680px) {
+}
+
+@media screen and (max-width: 1440px) {
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 1025px) {
+}
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 768px) {
+  /* Cache la side bar */
+  .navbar {
+    display: none;
+  }
+
+  /* Affiche la tab bar en bas */
+  .tab-bar {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--secondary-color);
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .tab-bar .tab-item {
+    text-align: center;
+    flex-grow: 1;
+    padding: 5px;
+  }
+
+  .tab-bar .tab-item i {
+    font-size: 24px;
+  }
+
+  .click::before {
+    content: none;
+  }
+
+  .icon.click .fas {
+    color: var(--primary-color);
+  }
+
+  .modal_content {
+    width: 500px;
+  }
+
+  .modal_content_auth {
+    background-color: var(--fourth-color);
+    width: 450px;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+  }
+
+  .modal_content_account {
+    background-color: var(--fourth-color);
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 0 0 20px 0;
+  }
+
+  .modal_content_update {
+    padding: 4em 0;
+  }
+
+  .container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .workingtimes {
+    width: 550px;
+    height: 375px;
+  }
+
+  .box .flex {
+    padding: 10px 10px;
+    min-height: 50px;
+  }
+
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .flex .box {
+    width: 125px;
+    min-height: 75px;
+  }
+
+  .flex .box .title_hours {
+    font-size: 14px;
+  }
+
+  .box .middle {
+    padding: 5px 0;
+  }
+
+  .title_hours {
+    align-self: center;
+  }
+
+  .middle .title_hours {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .update-search {
+    width: 10px;
+  }
+
+  .grid_4 {
+    width: 80%;
+  }
+
+  .grid_4 input {
+    width: 120%;
+  }
+
+  .timer{
+    color: black;
+    bottom: 96%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .modal_content {
+    margin-top: 1rem;
+    width: 400px;
+  }
+
+  .modal_content_auth {
+    width: 300px;
+  }
+
+  .modal_content_account {
+    width: 350px;
+  }
+
+  .workingtimes {
+    width: 400px;
+  }
+
+  .info-work {
+    width: 400px;
+  }
+
+  .span-title{
+    width: 40%; overflow: hidden
+  }
+
+  .team.modal-footer{
+    padding: 10px 0;
+    justify-content: center;
+  }
+
+  .faq{
+    max-width: 95%;
+  }
+
+  .team.modal-footer .me-2{
+    margin-right: 0 !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content{
+    padding: 0;
+    width: 100%;
+  }
+  .modal_content_account {
+    width: 95%;
+    margin-top: 1rem;
+    margin-bottom: 8em;
+  }
+
+  .modal_content_account .btn {
+    font-size: 0.9rem;
+  }
+
+  .workingtimes {
+    width: 90%;
+  }
+
+  .faq-answer {
+    font-size: 16px;
+  }
+
+  .faq-question span {
+    font-size: 22px;
+  }
+
+  .title-page{
+    margin-top: 2rem
+  }
+
+  .icon_hours{
+    font-size: 16px;
+  }
+
+  .two_icon_container .icon_add{
+    font-size: 7px;
+    right: -8px;
+    top: -3px
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .modal_content {
+    width: 95%;
+  }
+
+  .team-form .btn-primary {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .height {
+    height: fit-content;
+  }
+
+  .container_input {
+    max-width: 80%;
+  }
+
+  .modal_content_auth,
+  .modal_content_account {
+    width: 90%;
+  }
+
+  .modal_content_account {
+    margin-left: 0;
+  }
+
+  .modal_content_update {
+    width: 95%;
+  }
+
+  .btnLogin:hover {
+    transition: none;
+    transform: none;
+  }
+
+  .flex {
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .flex .box .title_hours {
+    font-size: 10px;
+  }
+
+  .workingtimes {
+    height: 275px;
+  }
+
+  .margin-box{
+    margin: 0 0.5rem
+  }
+  .middle .title_hours {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .grid_4{
+    grid-gap: 1rem;
+    width: 95%;
+  }
+
+  .grid_4 input{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .faq-question span {
+    font-size: 16px;
+  }
+}
+

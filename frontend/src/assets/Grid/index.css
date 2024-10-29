@@ -1,0 +1,20 @@
+.grid_2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 250px;
+}
+
+.grid3_notif{
+    display: grid;
+    grid-template-columns: 17% 73% 10%;
+    height: 100%;
+    align-items: center;
+}
+
+.grid_4 {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-gap: 2rem;
+    width: fit-content;
+    align-items: center;
+}

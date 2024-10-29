@@ -1,0 +1,21 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-wkwebview-inject-cookie": {
+      "PACKAGE_NAME": "com.mobile.timemanager"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.mobile.timemanager"
+    },
+    "@makiwin/cordova-plugin-cookie-manager": {
+      "PACKAGE_NAME": "com.mobile.timemanager"
+    }
+  },
+  "dependent_plugins": {}
+}

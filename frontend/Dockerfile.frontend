@@ -1,0 +1,32 @@
+FROM node:22.9 AS build
+
+# Configurer le répertoire de travail dans le conteneur
+WORKDIR /app
+
+# Copier le fichier package.json et package-lock.json
+COPY package*.json ./
+
+# Installer les dépendances
+RUN npm install
+
+# Copier le reste des fichiers du frontend
+COPY . .
+
+# Compiler l'application Vue.js pour la production
+# RUN npm run build
+
+# Étape finale : utiliser Node.js pour servir le contenu
+# FROM node:22.9-alpine
+
+# # Installer un serveur statique comme 'serve'
+# RUN npm install -g serve
+
+# # Copier les fichiers compilés de l'étape de construction
+# COPY --from=build /app/dist /app/dist
+
+# # Exposer le port 3000 (ou celui que tu veux)
+# EXPOSE 3000
+
+# Démarrer le serveur statique pour servir les fichiers
+# CMD ["serve", "-s", "dist", "-l", "3000"]
+CMD ["npm", "run", "serve"]

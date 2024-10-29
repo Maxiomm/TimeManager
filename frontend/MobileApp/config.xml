@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.mobile.timemanager" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Mobile</name>
+    <description>Sample Apache Cordova App</description>
+    <author email="dev@cordova.apache.org" href="https://cordova.apache.org">
+        Apache Cordova Team
+    </author>
+
+    <content src="index.html" />
+
+    <preference name="deployment-target" value="12.0" />
+
+    <preference name="scheme" value="http" />
+    <preference name="hostname" value="gotham" />
+    <preference name="port" value="8080" />
+
+    <allow-navigation href="http://%2A/*" />
+    <allow-navigation href="https://%2A/*" />
+
+    <allow-intent href="http://%2A/*" />
+    <allow-intent href="https://%2A/*" />
+    
+    <access origin="http://%2A/*" />
+    <access origin="https://%2A/*" />
+</widget>

@@ -1,0 +1,120 @@
+.btnLogin {
+    background-color: var(--primary-color) !important;
+    z-index: 20;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-small {
+    padding: 0 10px;
+    font-size: 0.875rem; /* Taille de police plus petite */
+    height: 25px; /* Hauteur du bouton réduite */
+    line-height: 1.5;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.button-group button {
+    margin: 0 10px;
+}
+
+.gradient-btn {
+    background: linear-gradient(90deg, #1e3c72, #2a5298);
+    color: white !important;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: transform 0.1s ease;
+}
+
+.gradient-btn:hover {
+    transform: scale(1.05);
+}
+
+.team-actions button {
+    opacity: 0; /* Les boutons sont cachés par défaut */
+    transition: opacity 0.3s ease; /* Transition fluide pour les boutons */
+}
+
+.list-group-item:hover .team-actions button {
+    opacity: 1; /* Affiche les boutons lors du survol */
+}
+
+.btnChoice {
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+}
+
+.btnChoice:hover {
+    transition: all 300ms ease-in-out;
+    transform: scale(105%);
+}
+
+
+.btn-dark-blue {
+    background-color: #0259af;
+    border-color: #0259af;
+}
+
+.btn-dark-blue:hover {
+    background-color: #004081;
+    border-color: #004081;
+}
+
+.btn{
+    height: 50px;
+    border-radius: 0;
+    width: 100%;
+}
+
+.w_50{
+    width: 50%;
+}
+
+.link{
+    background-color: transparent;
+    color: #3131ff;
+    border: none;
+    transition: 300ms ease-in-out;
+}
+
+.link:hover{
+    transform: scale(105%);
+}
+
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.button-group button {
+    margin: 0 10px;
+}
+
+.switch-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.btn-switch {
+    padding: 5px 10px;
+    font-size: 0.75rem;
+    padding: 3px 8px;
+    font-size: 0.75rem;
+    height: 30px;
+    border-radius: 15px;
+    line-height: 1.2;
+}

@@ -1,0 +1,31 @@
+.hide {
+  display: none !important;
+}
+
+.fade {
+  backdrop-filter: blur(10px);
+}
+
+.modalAddUser.fade {
+  background-color: var(--secondary-color);
+}
+
+.require {
+  position: relative;
+  width: fit-content;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.box .middle {
+  padding: 1rem 0;
+}

@@ -1,0 +1,31 @@
+.faq {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.faq-answer {
+    margin-top: 10px;
+    color: #555;
+    font-size: 22px;
+}
+
+.faq-toggle {
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 0;
+}

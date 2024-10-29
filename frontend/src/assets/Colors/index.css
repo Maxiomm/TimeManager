@@ -1,0 +1,22 @@
+:root {
+    --primary-color: #FFFFFF;
+    --secondary-color: #000000;
+    --third-color: rgba(255, 255, 255, 0.3);
+    --fourth-color: rgba(0, 0, 0, 0.8);
+    --five-color: rgba(255, 255, 255, 0.8);
+    --check-color: rgb(20, 182, 55);
+    --wrong-color: rgb(234, 10, 10);
+    --info-color: rgb(10, 70, 175);
+}
+
+.check-color{
+    color:var(--check-color)
+}
+
+.wrong-color{
+    color:var(--wrong-color)
+}
+
+.info-color{
+    color:var(--info-color)
+}

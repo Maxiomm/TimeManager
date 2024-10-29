@@ -1,0 +1,26 @@
+{
+  "cordova-plugin-wkwebview-inject-cookie": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-wkwebview-inject-cookie"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-whitelist": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-whitelist@1.3.5"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "@makiwin/cordova-plugin-cookie-manager": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-cookie-manager"
+    },
+    "is_top_level": true,
+    "variables": {}
+  }
+}
